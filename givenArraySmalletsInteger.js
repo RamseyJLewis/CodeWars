@@ -6,7 +6,7 @@
 let test= [34, -345, -1, 100]
    
   function findSmallestInt(args){
-    let min = Math.min.apply(Math, args)
+    let min = Math.min.apply(null, args)
     return min
 
   }

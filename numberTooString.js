@@ -2,7 +2,7 @@
 // What ways of achieving this do you know?
 
 function numberToString(num) {
-    num = num.toString()
-    return num
+    
+    return num.toString()
     }
     console.log(numberToString(9))
