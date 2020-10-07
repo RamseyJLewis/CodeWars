@@ -11,3 +11,18 @@ function invert(array) {
      return array.map(x => x * -1)
   }
 console.log(invert(array1))
+
+
+
+function fakeBin(x){
+    var val = '';
+
+    for(i = 0; i < x.length; i++){
+        if(Number(x[i],5)){
+            val += '0';
+        } else {
+            val += '1';
+        }
+    }
+    return val;
+}
