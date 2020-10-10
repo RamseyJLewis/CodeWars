@@ -2,10 +2,10 @@
 
 function find_average(array) {
     
-    let arrLength = array.length
-    let arrayAV = array.reduce((total, amount) => total + amount);
+    let arryLength = arryay.length
+    let arryayAV = arryay.reduce((total, amount) => total + amount);
 
-    finalOuput = arrayAV / arrLength 
+    let finalOuput = arryayAV / arryLength 
 
     return finalOuput
   }
