@@ -9,7 +9,6 @@ function bonusTime(salary, bonus) {
         let trueSalary = salary * 10
         return '£' + trueSalary
     } else{
-        let lowSalary = salary
         return '£' + lowSalary
     }
 }

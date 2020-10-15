@@ -8,6 +8,7 @@
 
 // "GCAT"  =>  "GCAU"
 let tex = "TTTT"
+
 function DNAtoRNA(dna) {
  let rna = dna.replace(/T/gi, 'U')
 
