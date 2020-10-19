@@ -14,15 +14,13 @@ function accum(letters) {
      
         let arr = letters[i].split('')
         let upper= arr.join().toUpperCase()
-      
-    
-        let repLet = letters[i].repeat([i]) 
+        let repLet = letters[i].toLowerCase().repeat([i]) 
         let everyLetter = upper + repLet 
-        final = everyLetter + '-'
-    
-        
+        let  final = everyLetter + '-'
+            empty += final
     }
-  
+    
+    return empty.slice(0, -1)
 }
 
-console.log(accum('abcd'))
+console.log(accum('MjtkuBovqrU'))
