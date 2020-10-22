@@ -7,7 +7,8 @@
 
 function getAverage(marks){
 
-    let reducedValue = marks.reduce(function(accumulator, currentNum){return accumulator + currentNum})
+    let reducedValue = marks.reduce((a, c) =>  a + c)
+
      let final =  reducedValue/marks.length
 
         return Math.floor(final)
