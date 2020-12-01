@@ -16,27 +16,14 @@ function isValidWalk(walk) {
   if (walk.length !== 10){
       return false;
   } 
-  let n = 0; let s = 0 ;let w = 0; let e = 0;
+  let n = 0, s = 0 , w = 0, e = 0;
   for ( i = 0; i < walk.length; i++ ){
-      if(walk[i] == 'n' ){
-        n++
-    } else if ( walk[i] == 's'){
-        s++
-    } else if ( walk[i] == 'w'){
-        w++
-    } else if ( walk[i] == 'e'){
-        e++
-    }
+    if(walk[i] == 'n' ){n++} 
+    else if ( walk[i] == 's'){s++} 
+    else if ( walk[i] == 'w'){w++} 
+    else if ( walk[i] == 'e'){e++}
   }
-  console.log(n)
-  console.log(s)
-  console.log(e)
-  console.log(w)
-  if( n == s && e == w ){
-    return true
-    } else{
-    return false
-    }
+    return n ==s && e==w
   }
   //some test cases for you...
 console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']))
