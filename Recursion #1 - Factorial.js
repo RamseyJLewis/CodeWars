@@ -15,3 +15,13 @@
 // You have to create the function factorial that receives n and returns n!. You have to use recursion.
 
 
+const factorial = n => {
+    console.log(n)
+    if( n == 0){
+        return 1
+    }else if(n > 0){
+        return factorial(n -1) * n
+    }
+};
+
+console.log(factorial(6))
