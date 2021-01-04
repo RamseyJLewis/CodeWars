@@ -15,9 +15,17 @@ function createArrayOfTiers(num) {
     for(let i = 0; i < numStr.length; i ++){
        arr.push(numStr[i]) 
        arr.join('')
-       console.log(arr)
+        finalArr = arr 
+       console.log(finalArr.concat(arr))        
     }
     return numStr;
+}
+
+function createArrayOfTiers(num) {
+    let prev = '';
+    return [...num + ''].map((value) => {
+        return prev += value;
+    });
 }
 
 console.log(createArrayOfTiers(420)); // 420 should return ["4", "42", "420"]
