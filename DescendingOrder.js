@@ -13,10 +13,8 @@ function descendingOrder(n){
     for(let i = 0; i < str.length ; i++){  
       arr.push(str[i]);     
     }
-    let sortArr = arr.sort((a,b)=> b - a)
-    let back2Str = sortArr.toString()
-    let newStr = back2Str.replace(/,/g, '')
-    let finalInteger = parseInt(newStr,10)
+    let sortArrToStrCutComma = arr.sort((a,b)=> b - a).toString().replace(/,/g, '')
+    let finalInteger = parseInt(sortArrToStrCutComma,10)
     return finalInteger
   }
 
