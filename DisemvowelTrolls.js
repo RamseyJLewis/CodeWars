@@ -10,7 +10,7 @@
 
 
 function disemvowel(str) {
-let final = str.replace(/([aeiou])/g,"")
+let final = str.replace(/([aAeEiIoOuU])/g,"")
     return final;
   }
 
