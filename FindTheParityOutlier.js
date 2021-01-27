@@ -7,14 +7,11 @@
 // Should return: 160 (the only even number)
 
 function findOutlier(integers) {
-    //loop through
-    let odd = 0
-    let even = 0
-    let output = 0
+    let odd = 0; let even = 0; let output = 0
     for (let i = 0; i < integers.length; i++ ) {
         if (integers[i] % 2 == 0) {
             even++            
-        } else{
+        }else{
             odd++
         }
     }
