@@ -14,8 +14,7 @@ function alphabetPosition(text) {
     let accum = ''
     for(i = 0; i < text.length; i ++){        
        if(letters.includes(text[i].toLowerCase())){      
-        let x = letters.indexOf(text[i].toLowerCase())
-        x = x+1
+        let x = letters.indexOf(text[i].toLowerCase()) +1
         accum = accum + ' ' + x 
        }
     }
