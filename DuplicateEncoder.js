@@ -12,38 +12,39 @@ function duplicateEncode(word) {
     // loop through the word
     let accum = ''
     let wordPlusI = ''
-    let wordMinI = word
-    word = word.toLowerCase()
-    for (let i = 0; i < word.length; i++) {
-        // set word[i] to an accum and remove it from the word
-        if (word.length != accum.length) {           
-            wordMinI = wordMinI.slice(1) 
-            console.log(wordMinI);              
    
-            console.log(wordPlusI);    
-            if (wordMinI.includes(word[i]) || wordPlusI.includes(word[i])) {
+    let lowWord = word.toLowerCase()
+    let wordMinI = lowWord
+    //console.log(lowWord);
+    for (let i = 0; i < lowWord.length; i++) {
+        // set word[i] to an accum and remove it from the word
+        if (lowWord.length != accum.length) {           
+            wordMinI = wordMinI.slice(1) 
+         //console.log(wordMinI);              
+   
+            //console.log(wordPlusI);    
+            if (wordMinI.includes(lowWord[i]) || wordPlusI.includes(lowWord[i])) {
                 accum = accum.concat(')')
             } else {
                 accum = accum.concat('(')
             }          
-            wordPlusI = wordPlusI.concat(word[i])  
-            console.log(word[i]);
+            wordPlusI = wordPlusI.concat(lowWord[i])  
+         //console.log(lowWord[i]);
             
             //console.log(wordMinI);
-            console.log(accum);
-        } else
-       
-       console.log('done');
+            //console.log(accum);
+        } 
     }
-    //return accum
+   return accum
 }
 
 
 
 //console.log(duplicateEncode("din"))  //,"(((");
 //console.log(duplicateEncode("recede"))  //,"()()()");
-console.log(duplicateEncode("Success"))  //,")())())","should ignore case");
-//console.log(duplicateEncode("(( @"))  //,"))((");
+//console.log(duplicateEncode("SSuccess"))  //,")())())","should ignore case");
+console.log(duplicateEncode("Q(FQ QlmQQQaOv@Qb")) //')(()()(()))(((()('
+
 
 //)()(()(
 
