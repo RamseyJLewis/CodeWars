@@ -6,33 +6,23 @@
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
 
+//
 
 
 function duplicateEncode(word) {
-    // loop through the word
     let accum = ''
     let wordPlusI = ''
-   
     let lowWord = word.toLowerCase()
     let wordMinI = lowWord
-    //console.log(lowWord);
     for (let i = 0; i < lowWord.length; i++) {
-        // set word[i] to an accum and remove it from the word
         if (lowWord.length != accum.length) {           
             wordMinI = wordMinI.slice(1) 
-         //console.log(wordMinI);              
-   
-            //console.log(wordPlusI);    
             if (wordMinI.includes(lowWord[i]) || wordPlusI.includes(lowWord[i])) {
                 accum = accum.concat(')')
             } else {
                 accum = accum.concat('(')
             }          
             wordPlusI = wordPlusI.concat(lowWord[i])  
-         //console.log(lowWord[i]);
-            
-            //console.log(wordMinI);
-            //console.log(accum);
         } 
     }
    return accum
