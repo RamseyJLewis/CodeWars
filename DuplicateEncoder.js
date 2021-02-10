@@ -6,7 +6,6 @@
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
 
-//
 
 
 function duplicateEncode(word) {
@@ -15,17 +14,17 @@ function duplicateEncode(word) {
     let lowWord = word.toLowerCase()
     let wordMinI = lowWord
     for (let i = 0; i < lowWord.length; i++) {
-        if (lowWord.length != accum.length) {           
-            wordMinI = wordMinI.slice(1) 
+        if (lowWord.length != accum.length) {
+            wordMinI = wordMinI.slice(1)
             if (wordMinI.includes(lowWord[i]) || wordPlusI.includes(lowWord[i])) {
                 accum = accum.concat(')')
             } else {
                 accum = accum.concat('(')
-            }          
-            wordPlusI = wordPlusI.concat(lowWord[i])  
-        } 
+            }
+            wordPlusI = wordPlusI.concat(lowWord[i])
+        }
     }
-   return accum
+    return accum
 }
 
 
@@ -35,7 +34,5 @@ function duplicateEncode(word) {
 //console.log(duplicateEncode("SSuccess"))  //,")())())","should ignore case");
 console.log(duplicateEncode("Q(FQ QlmQQQaOv@Qb")) //')(()()(()))(((()('
 
-
-//)()(()(
 
 
