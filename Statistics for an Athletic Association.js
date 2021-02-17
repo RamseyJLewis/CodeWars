@@ -26,15 +26,17 @@
 
 
 function stat(strg) {
-let eachAth = strg.split(' ')
+let eachAth = strg.split(',')
 for(let i = 0; i < eachAth.length; i++){
-    if(eachAth[i][0] == 0){
+    eachAth[i] = eachAth[i].trim()
+    if(eachAth[i].charAt(0) == 0 ){
         eachAth[i] = eachAth[i].slice(1)
-    }
-    
-    // to get the range compare the value of 
+    } 
+    let stats = eachAth[i]
+    console.log(stats);
+      
 }
-return console.log(eachAth);
+//return console.log(eachAth);
 
 }
 
