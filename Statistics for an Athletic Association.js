@@ -33,7 +33,12 @@ for(let i = 0; i < eachAth.length; i++){
         eachAth[i] = eachAth[i].slice(1)
     } 
     let stats = eachAth[i]
-    console.log(stats);
+    
+    if (stats[0] > eachAth[i +1][0] ) {
+        let high
+    }
+
+    //console.log(stats[0]);
       
 }
 //return console.log(eachAth);
